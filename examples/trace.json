@@ -1,0 +1,51 @@
+{
+  "traceId": "practice-cache-v1",
+  "title": "Practice cache trace",
+  "purpose": "Classify complete accesses to the declared cache entries.",
+  "transactions": [
+    {
+      "id": "a",
+      "label": "First update"
+    },
+    {
+      "id": "b",
+      "label": "Second update"
+    }
+  ],
+  "objects": [
+    {
+      "id": "x",
+      "label": "Entry X"
+    },
+    {
+      "id": "y",
+      "label": "Entry Y"
+    }
+  ],
+  "events": [
+    {
+      "id": "e1",
+      "transactionId": "a",
+      "objectId": "x",
+      "description": "Fetch the current X value"
+    },
+    {
+      "id": "e2",
+      "transactionId": "b",
+      "objectId": "x",
+      "description": "Replace the X value"
+    },
+    {
+      "id": "e3",
+      "transactionId": "b",
+      "objectId": "y",
+      "description": "Fetch the current Y value"
+    },
+    {
+      "id": "e4",
+      "transactionId": "a",
+      "objectId": "y",
+      "description": "Replace the Y value"
+    }
+  ]
+}
